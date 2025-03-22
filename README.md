@@ -21,5 +21,5 @@
 <h2>Ejecutar migraciones</h2>
 <li>php artisan migrate</li>
 
-<h2>Iniciár el servidor</h2>
+<h2>Iniciar el servidor</h2>
 <li>php artisan serve</li>
