@@ -33,9 +33,9 @@
 
       </nav>
 
-<div class="w-[90%] text-center mx-auto  mt-[3rem] rounded-[1rem]   ">
+<div class="w-[90%] text-center mx-auto  mt-[3rem] rounded-[1rem] border-1 border-blue-500  ">
        
-<form action="{{ route('productos.index') }}" method="GET" class="mb-4 md:flex md:gap-[1rem] md:border-1 md:border-blue-500 md:rounded-lg md:items-center md:p-[0.8rem]  ">
+<form action="{{ route('productos.index') }}" method="GET" class="mb-4 md:flex md:gap-[1rem]  md:rounded-lg md:items-center md:p-[0.8rem] p-[0.9rem]  ">
     @csrf
     <div>
         <label for="search">Buscar por nombre:</label>
@@ -57,7 +57,7 @@
    </form>
 
         
-      </div>
+   </div>
 
       <div class="grid  grid-cols-2 md:grid-cols-3 gap-4 w-[90%] mx-auto mt-[2rem] ">
 
@@ -72,16 +72,15 @@
          <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[10rem]  "> 
             <img class=" rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[50%] md:h-[40%]  mx-auto " src="{{ asset('imagenes/producto.png')  }}" alt="">
 
-
             <div class="p-4">
 
-            <div class="pl-[2.5rem] md:text-[1.6rem]">
-            <p>Id: {{$producto->id}}</p>
-            <h4 class="font-bold overflow-x-auto overflow-y-auto">{{$producto->nombre_producto}}</h4>
+            <div class=" md:text-[1.6rem] md:pl-[2rem]">
+              <p>Id: {{$producto->id}}</p>
+             <h4 class="font-bold overflow-x-auto overflow-y-auto ">{{$producto->nombre_producto}}</h4>
 
-            <p class="overflow-x-auto overflow-y-auto">{{$producto->descripcion}}</p>
-            <p>$ {{$producto->precio}}</p>
-            <p>Cantidad: {{$producto->cantidad}}</p>
+             
+             <p>$ {{$producto->precio}}</p>
+             <p>Cantidad: {{$producto->cantidad}}</p>
 
             </div>
            
