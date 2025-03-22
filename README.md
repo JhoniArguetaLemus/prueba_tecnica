@@ -2,9 +2,9 @@
 
 <h2>Tecnologías Utilizadas</h2>
 
-Backend: Laravel
-Frontend: HTML, CSS, JavaScript, Tailwind CSS
-Base de Datos: SQLite (por defecto)
+<h2>Backend:</h2> Laravel
+<h2>Frontend:</h2> HTML, CSS, JavaScript, Tailwind CSS
+<h2>Base de Datos:</h2> SQLite (por defecto)
 
 <h2>Cómo Utilizar el Proyecto</h2>
 <li>Clonar el repositorio</li>
