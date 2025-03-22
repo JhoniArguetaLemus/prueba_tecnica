@@ -70,7 +70,7 @@
         @foreach($productos as $producto)
 
          <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[10rem]  "> 
-            <img class=" h-[9rem] rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[100%] md:h-[50%] " src="https://wallpapers.com/images/featured/imagenes-del-horizonte-de-san-francisco-1ihpn12wdtk5xa9h.jpg" alt="">
+            <img class=" rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[50%] md:h-[40%]  mx-auto " src="{{ asset('imagenes/producto.png')  }}" alt="">
 
 
             <div class="p-4">
