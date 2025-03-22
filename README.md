@@ -31,6 +31,9 @@
 <li>Actualización de inventario</li>
 <li>Edición de productos</li>
 <li>Eliminación de productos</li>
+<li>API REST con operaciones CRUD</li>
+
+
 <h2>Se intento pero no se logro</h2>
 <li>Implementar un sistema de autenticación básico con un único usuario</li>
 <li>Token de acceso enviado por correo electrónico</li>
