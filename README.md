@@ -23,3 +23,14 @@
 
 <h2>Iniciar el servidor</h2>
 <li>php artisan serve</li>
+
+
+<h2>Funcionalidades logradas</h2>
+<li>Gestión de productos</li>
+<li>Visualización de productos</li>
+<li>Actualización de inventario</li>
+<li>Edición de productos</li>
+<li>Eliminación de productos</li>
+<h2>Se intento pero no se logro</h2>
+<li>Implementar un sistema de autenticación básico con un único usuario</li>
+<li>Token de acceso enviado por correo electrónico</li>
