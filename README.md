@@ -1,15 +1,19 @@
-Prueba Técnica sistema de gestión de inventario 
+<h1>Prueba Técnica - Sistema de Gestión de Inventario</h1> 
 
-Tecnologías utilizadas: Laravel, CSS, JS, HTML, TailwindCSS
-Base de datos: SQLite (por defecto)
+<h2>Tecnologías Utilizadas</h2>
 
-Como utilizar el proyecto 
+Backend: Laravel
+Frontend: HTML, CSS, JavaScript, Tailwind CSS
+Base de Datos: SQLite (por defecto)
 
-Clonar el repositorio
+<h2>Cómo Utilizar el Proyecto</h2>
+<li>Clonar el repositorio</li>
+<li>Instalar dependencias (si es necesario)</li>
 
-Ejecutar: npm run dev en la terminal para cargar los estilos de Tailwind.
-Migrar los modelos con: php artisan migrate 
-Ejecutar el programa con: php artisan serve.
+<h2>Compilar los estilos de Tailwind:</h2>
+<li>npm run dev</li>
+<h2>Ejecutar migraciones</h2>
+<li>php artisan migrate</li>
 
-
-
+<h2>Iniciár el servidor</h2>
+<li>php artisan serve</li>
