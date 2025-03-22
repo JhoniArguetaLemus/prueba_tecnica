@@ -69,7 +69,7 @@
 
         @foreach($productos as $producto)
 
-         <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[6rem] "> 
+         <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[10rem]  "> 
             <img class=" h-[9rem] rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[100%] md:h-[50%] " src="https://wallpapers.com/images/featured/imagenes-del-horizonte-de-san-francisco-1ihpn12wdtk5xa9h.jpg" alt="">
 
 
@@ -77,9 +77,9 @@
 
             <div class="pl-[2.5rem] md:text-[1.6rem]">
             <p>Id: {{$producto->id}}</p>
-            <h4 class="font-bold">{{$producto->nombre_producto}}</h4>
+            <h4 class="font-bold overflow-x-auto overflow-y-auto">{{$producto->nombre_producto}}</h4>
 
-            <p>{{$producto->descripcion}}</p>
+            <p class="overflow-x-auto overflow-y-auto">{{$producto->descripcion}}</p>
             <p>$ {{$producto->precio}}</p>
             <p>Cantidad: {{$producto->cantidad}}</p>
 

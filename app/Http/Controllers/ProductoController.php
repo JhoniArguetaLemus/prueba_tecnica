@@ -136,6 +136,7 @@ class ProductoController extends Controller
    public function actualizarProducto(Request $request, $id){
 
     $producto=Producto::find($id);
+
     if($producto){
         $request->validate([
             'nombre_producto' => 'required',
@@ -145,9 +146,17 @@ class ProductoController extends Controller
     
         ]);
 
-        $producto->update($request->all());
+        $producto->update([
+            'nombre_producto' => $request->input('nombre_producto'),
+            'descripcion' => $request->input('descripcion'),
+            'precio' => $request->input('precio'),
+            'cantidad' => $request->input('cantidad'),
+        ]);
 
-        return redirect()->back()->with('mensaje', 'Producto actualizado exitosamente');
+        //$producto->update($request->all());
+
+        return redirect()->route('productos.ver')->with('mensaje', 'Producto actualizado exitosamente');
+
     }
 
 
