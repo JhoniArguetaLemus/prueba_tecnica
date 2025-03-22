@@ -47,7 +47,7 @@ class ProductoController extends Controller
 
     return view('listar_productos', compact('productos'));
 
-    //return view('products.index', compact('products'));
+ 
 
 
 

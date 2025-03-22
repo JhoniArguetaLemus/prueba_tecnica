@@ -61,13 +61,19 @@
 
       <div class="grid  grid-cols-2 md:grid-cols-3 gap-4 w-[90%] mx-auto mt-[2rem] ">
 
-      @foreach($productos as $producto)
 
-        <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[6rem] "> 
-          <img class=" h-[9rem] rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[100%] md:h-[50%] " src="https://wallpapers.com/images/featured/imagenes-del-horizonte-de-san-francisco-1ihpn12wdtk5xa9h.jpg" alt="">
+      @if($productos->isEmpty())
+         <p class="text-[1.5rem]">No hay productos disponibles.</p>
+
+      @else
+
+        @foreach($productos as $producto)
+
+         <div class="border-2 border-black w-[100%] mx-auto   mt-[3rem] rounded-[1rem] md:pb-[6rem] "> 
+            <img class=" h-[9rem] rounded-tl-[0.9rem] rounded-tr-[0.9rem] md:w-[100%] md:h-[50%] " src="https://wallpapers.com/images/featured/imagenes-del-horizonte-de-san-francisco-1ihpn12wdtk5xa9h.jpg" alt="">
 
 
-          <div class="p-4">
+            <div class="p-4">
 
             <div class="pl-[2.5rem] md:text-[1.6rem]">
             <p>Id: {{$producto->id}}</p>
@@ -116,8 +122,9 @@
           
           
         </div>
-
         @endforeach
+
+        @endif
 
         
 
