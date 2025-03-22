@@ -8,9 +8,15 @@
 
 <h2>Cómo Utilizar el Proyecto</h2>
 <li>Clonar el repositorio</li>
-<li>Instalar dependencias (si es necesario)</li>
+<h2>Instalar dependencias (si es necesario)</h2>
+<li>composer install</li>
+<h2>Copiar el archivo .env.example a .env</h2>
+<li>cp .env.example .env</li>
+<h2>Generar clave de aplicación</h2>
+<li>php artisan key:generate</li>
 
 <h2>Compilar los estilos de Tailwind:</h2>
+<li>npm install</li>
 <li>npm run dev</li>
 <h2>Ejecutar migraciones</h2>
 <li>php artisan migrate</li>
